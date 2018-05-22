@@ -2,10 +2,7 @@
   "name": "noter",
   "version": "1.0.0",
   "description": "Simple note keeper",
-  "main": "index.js",
-  "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
-  },
+  "main": "server/app.js",
   "repository": {
     "type": "git",
     "url": "git+https://github.com/VladBlow/noter.git"
@@ -15,5 +12,23 @@
   "bugs": {
     "url": "https://github.com/VladBlow/noter/issues"
   },
-  "homepage": "https://github.com/VladBlow/noter#readme"
+  "homepage": "https://github.com/VladBlow/noter#readme",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon server/app.js",
+    "prettier:all":
+      "prettier --single-quote --no-semi --trailing-comma es5 --write 'app/**/*.js'",
+    "precommit": "pretty-quick --staged"
+  },
+  "dependencies": {
+    "body-parser": "^1.18.3",
+    "express": "^4.16.3",
+    "mongodb": "^3.1.0-beta4"
+  },
+  "devDependencies": {
+    "husky": "^0.14.3",
+    "nodemon": "^1.17.4",
+    "prettier": "^1.12.1",
+    "pretty-quick": "^1.5.1"
+  }
 }
