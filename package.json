@@ -1,0 +1,19 @@
+{
+  "name": "noter",
+  "version": "1.0.0",
+  "description": "Simple note keeper",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/VladBlow/noter.git"
+  },
+  "author": "Vladimir Cibizov",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/VladBlow/noter/issues"
+  },
+  "homepage": "https://github.com/VladBlow/noter#readme"
+}
