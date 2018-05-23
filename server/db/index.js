@@ -25,7 +25,12 @@ const createNote = data =>
 
 const listNotes = () => Note.find()
 
+const deleteNote = id => Note.findById(id).remove()
+
+// const updateNote = (id, data) => Note.updateOne()
+
 module.exports = {
   createNote,
   listNotes,
+  deleteNote,
 }
